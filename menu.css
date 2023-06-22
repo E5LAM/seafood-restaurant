@@ -1,0 +1,80 @@
+.menu{
+    background-color: rgb(95, 152, 252);
+    padding: 0 7vw;
+    padding-bottom: .5rem;
+}
+.menu-main-slide{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+.menu-main-slide div:nth-child(1) h1{
+    display: block;
+    flex: 1;
+    margin: 4rem 0;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.menu-main-slide .menu-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+.menu-main-slide .menu-item .item{
+    width: 250px;
+    padding-bottom: 1rem;
+    text-align: center;
+    border: 4px solid rgb(0, 89, 255) ;
+    border-radius: 1rem;
+    background-color: white;
+    margin: 0 .75rem 1.25rem .75rem;
+    display: inline-block;
+    padding-bottom: .5rem;
+    margin: 1rem ;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+.menu-main-slide .menu-item .item:hover{
+    scale: 1.1;
+}
+.menu-main-slide .menu-item .item img{
+    width: 100%;
+    scale: 1;
+}
+.menu-main-slide .menu-item .item p{
+    text-align: left;
+    padding: .2rem;
+    
+}
+.menu-main-slide .menu-item .item h4{
+    text-align: right;
+    color: rgb(10, 55, 151);
+    padding: .3rem;
+}
+
+            /* ///////////////////////// responsive ( 768px ) /////////////////////////// */
+
+@media screen and (max-width:768px){
+    .menu-main-slide{
+        display: flex;
+        justify-content: center;
+    }
+    .menu-main-slide .menu-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu-item .item{
+        text-align: center;
+    }
+    .menu-item .item:hover{
+        scale: 1;
+    }
+}
